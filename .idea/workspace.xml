@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0b9ffa1c-2217-439d-b1eb-f7fb290d391f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZWIIqwR011Mlo0ylBLt0DMrLzK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="13.10.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NVNA-Schedule/docs/index.html" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="/lib/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../NVNA-Schedule/docs" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NVNA-Schedule/docs/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b9ffa1c-2217-439d-b1eb-f7fb290d391f" name="Default Changelist" comment="" />
+      <created>1584948348699</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584948348699</updated>
+      <workItem from="1584948359398" duration="19824000" />
+      <workItem from="1584970404140" duration="1436000" />
+      <workItem from="1584977713355" duration="1291000" />
+      <workItem from="1584997344805" duration="24000" />
+      <workItem from="1585048179334" duration="1340000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="141" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585048644394">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state x="141" y="29" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.742@0.0.1366.742" timestamp="1585048644394" />
+    <state x="462" y="114" width="426" height="509" key="FileChooserDialogImpl" timestamp="1585048640776">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state x="462" y="114" width="426" height="509" key="FileChooserDialogImpl/0.0.1366.742@0.0.1366.742" timestamp="1585048640776" />
+    <state width="1345" height="166" key="GridCell.Tab.0.bottom" timestamp="1585049361303">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1345" height="166" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1585049361303" />
+    <state width="1345" height="166" key="GridCell.Tab.0.center" timestamp="1585049361302">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1345" height="166" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1585049361302" />
+    <state width="1345" height="166" key="GridCell.Tab.0.left" timestamp="1585049361302">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1345" height="166" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1585049361302" />
+    <state width="1345" height="166" key="GridCell.Tab.0.right" timestamp="1585049361303">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1345" height="166" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1585049361303" />
+    <state width="1345" height="166" key="GridCell.Tab.1.bottom" timestamp="1585049361304">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1345" height="166" key="GridCell.Tab.1.bottom/0.0.1366.742@0.0.1366.742" timestamp="1585049361304" />
+    <state width="1345" height="166" key="GridCell.Tab.1.center" timestamp="1585049361303">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1345" height="166" key="GridCell.Tab.1.center/0.0.1366.742@0.0.1366.742" timestamp="1585049361303" />
+    <state width="1345" height="166" key="GridCell.Tab.1.left" timestamp="1585049361303">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1345" height="166" key="GridCell.Tab.1.left/0.0.1366.742@0.0.1366.742" timestamp="1585049361303" />
+    <state width="1345" height="166" key="GridCell.Tab.1.right" timestamp="1585049361303">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1345" height="166" key="GridCell.Tab.1.right/0.0.1366.742@0.0.1366.742" timestamp="1585049361303" />
+    <state width="1345" height="537" key="GridCell.Tab.2.bottom" timestamp="1584953421565">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1345" height="537" key="GridCell.Tab.2.bottom/0.0.1366.742@0.0.1366.742" timestamp="1584953421565" />
+    <state width="1345" height="537" key="GridCell.Tab.2.center" timestamp="1584953421564">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1345" height="537" key="GridCell.Tab.2.center/0.0.1366.742@0.0.1366.742" timestamp="1584953421564" />
+    <state width="1345" height="537" key="GridCell.Tab.2.left" timestamp="1584953421564">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1345" height="537" key="GridCell.Tab.2.left/0.0.1366.742@0.0.1366.742" timestamp="1584953421564" />
+    <state width="1345" height="537" key="GridCell.Tab.2.right" timestamp="1584953421564">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1345" height="537" key="GridCell.Tab.2.right/0.0.1366.742@0.0.1366.742" timestamp="1584953421564" />
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup" timestamp="1584951320309">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state x="346" y="63" width="672" height="678" key="search.everywhere.popup/0.0.1366.742@0.0.1366.742" timestamp="1584951320309" />
+  </component>
+</project>
