@@ -28,13 +28,13 @@
         let weekValue = week.value.match(/-W?(\d+)/)[1];
 
         let nvnaUrl = `http://nvna.eu/schedule/?group=${code.value}&queryType=${searchingFor}&Week=${weekValue}`;
-        let url = `https://api.allorigins.win/get?url=${encodeURIComponent(nvnaUrl)}&callback=?`;
+        let url = `https://web--scrapper.herokuapp.com/webscrapper?url=${encodeURIComponent(nvnaUrl)}`;
 
-        // fetch(url) //use this after allow cors on web--scrapper
-        //     //.then(r => r.ok ? r : throw(r.status))
-        //     .then(r => r.json())
-        //     .then(requestHandler);
-        $.getJSON(url, requestHandler);
+        fetch(url) //use this after allow cors on web--scrapper
+            //.then(r => r.ok ? r : throw(r.status))
+            .then(r => r.json())
+            .then(requestHandler);
+        //$.getJSON(url, requestHandler);
 
         function requestHandler(data){
             console.log(data);
