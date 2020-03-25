@@ -7,100 +7,50 @@
     .col-s-1 {
         width: 8.33%;
     }
-
     .col-s-2 {
         width: 16.66%;
     }
-
     .col-s-3 {
         width: 25%;
     }
-
     .col-s-4 {
         width: 33.33%;
     }
-
     .col-s-5 {
         width: 41.66%;
     }
-
     .col-s-6 {
         width: 50%;
     }
-
     .col-s-7 {
         width: 58.33%;
     }
-
     .col-s-8 {
         width: 66.66%;
     }
-
     .col-s-9 {
         width: 75%;
     }
-
     .col-s-10 {
         width: 83.33%;
     }
-
     .col-s-11 {
         width: 91.66%;
     }
-
     .col-s-12 {
         width: 100%;
     }
 }
 
-@media only screen and (min-width: 768px) {
-
-    .col-1 {
-        width: 8.33%;
+@media only screen and (max-width: 600px) {
+    label{
+        display: block;
     }
+}
 
-    .col-2 {
-        width: 16.66%;
-    }
-
-    .col-3 {
-        width: 25%;
-    }
-
-    .col-4 {
-        width: 33.33%;
-    }
-
-    .col-5 {
-        width: 41.66%;
-    }
-
-    .col-6 {
-        width: 50%;
-    }
-
-    .col-7 {
-        width: 58.33%;
-    }
-
-    .col-8 {
-        width: 66.66%;
-    }
-
-    .col-9 {
-        width: 75%;
-    }
-
-    .col-10 {
-        width: 83.33%;
-    }
-
-    .col-11 {
-        width: 91.66%;
-    }
-
-    .col-12 {
-        width: 100%;
+@media only screen and (max-width: 430px) {
+    label.containerForRadios{
+        display: block;
     }
 }
 
@@ -113,7 +63,6 @@ body {
 
 
 input {
-
     padding: 1%;
     margin: 2%;
 }
@@ -144,8 +93,8 @@ h2 {
 
 }
 
-.container {
-    display: block;
+.containerForRadios {
+    display: inline;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
@@ -157,7 +106,7 @@ h2 {
 }
 
 
-.container input {
+.containerForRadios input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -175,12 +124,12 @@ h2 {
 }
 
 
-.container:hover input ~ .checkmark {
+.containerForRadios:hover input ~ .checkmark {
     background-color: #ccc;
 }
 
 
-.container input:checked ~ .checkmark {
+.containerForRadios input:checked ~ .checkmark {
     background-color: #2196F3;
 }
 
@@ -192,12 +141,12 @@ h2 {
 }
 
 
-.container input:checked ~ .checkmark:after {
+.containerForRadios input:checked ~ .checkmark:after {
     display: block;
 }
 
 
-.container .checkmark:after {
+.containerForRadios .checkmark:after {
     left: 9px;
     top: 5px;
     width: 5px;

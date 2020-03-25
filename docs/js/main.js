@@ -20,8 +20,7 @@
             return;
         }
 
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Зарежда се';
+        disableSubmitBtn(true);
 
         let searchingFor;
 
@@ -50,38 +49,49 @@
         }
         finally
         {
-            submitBtn.removeAttribute('disabled');
-            submitBtn.textContent = 'Покажи';
+            disableSubmitBtn(false);
         }
+    }
 
-        function requestHandler(data)
-        {
-            scheduleTable.innerHTML = data.contents.match(/<table>[.\s\S]*?<\/table>/uimg)[0];
-            let table = scheduleTable.firstElementChild;
-            let weekDays = getWeekDaysArray(table);
-            let classes;
-            weekDays
-                .forEach((day, i, arr) => {
-                    day.firstElementChild.classList.add('weekDayTag');
-                    if (hasAssignments(day))
-                    {
-                        classes = getClassesArray(day);
-                        classes
-                            .forEach(_class => {
-                                if (hasClass(_class))
+    function requestHandler(data)
+    {
+        scheduleTable.innerHTML = data.contents.match(/<table>[.\s\S]*?<\/table>/uimg)[0];
+        let table = scheduleTable.firstElementChild;
+        let weekDays = getWeekDaysArray(table);
+        let classes;
+        weekDays
+            .forEach((day, i, arr) => {
+                day.firstElementChild.classList.add('weekDayTag');
+                if (hasAssignments(day))
+                {
+                    classes = getClassesArray(day);
+                    classes
+                        .forEach(_class => {
+                            if (hasClass(_class))
+                            {
+                                if (isTheClassDoubled(_class))
                                 {
-                                    if (isTheClassDoubled(_class))
-                                    {
-                                        //do sth
-                                    }
+                                    //do sth
                                 }
-                            })
-                    }
-                    else
-                    {
-                        day.classList.add('noLectures')
-                    }
-                })
+                            }
+                        })
+                }
+                else
+                {
+                    day.classList.add('noLectures')
+                }
+            })
+    }
+
+    function disableSubmitBtn(shouldDisable)
+    {
+        if (shouldDisable)
+        {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Зарежда се';
+            return;
         }
+        submitBtn.removeAttribute('disabled');
+        submitBtn.textContent = 'Покажи';
     }
 })();

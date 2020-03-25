@@ -11,28 +11,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
-<div>
 <form class="col-10">
-    <label for="code">
-        Код
-        <input type="text" placeholder="Въведи класно/код/зала" id="code">
-    </label>
-    <label for="code">
-        Седмица/дата
-        <input type="text" placeholder="Въведи седмица/дата" id="week">
-    </label>
-    <div>
-        <label for="group" class="container">
+    <label for="code">Код</label>
+    <input type="text" placeholder="Въведи класно/код/зала" id="code">
+
+    <label for="code">Седмица/дата</label>
+    <input type="text" placeholder="Въведи седмица/дата" id="week">
+
+    <div class="radioSearchingFor">
+        <label for="group" class="containerForRadios">
             За класно
             <input type="radio" id="group" name="searchingFor">
             <span class="checkmark"></span>
         </label>
-        <label for="lecturer" class="container">
+        <label for="lecturer" class="containerForRadios">
             За преподавател
             <input type="radio" id="lecturer" name="searchingFor">
             <span class="checkmark"></span>
         </label>
-        <label for="room" class="container">
+        <label for="room" class="containerForRadios">
             За зала
             <input type="radio" id="room" name="searchingFor">
             <span class="checkmark"></span>
@@ -43,7 +40,6 @@
 <table>
 
 </table>
-</div>
 
 <script src="./js/getWeekExtension.js"></script>
 <script src="./js/workingWithNvnaTableModule.js"></script>
