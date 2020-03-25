@@ -29,25 +29,39 @@
 
         let nvnaUrl = `http://nvna.eu/schedule/?group=${code.value}&queryType=${searchingFor}&Week=${weekValue}`;
         let url = `https://web--scrapper.herokuapp.com/webscrapper?url=${encodeURIComponent(nvnaUrl)}`;
-
-        fetch(url) //use this after allow cors on web--scrapper
-            //.then(r => r.ok ? r : throw(r.status))
-            .then(r => r.json())
+        // url = '../testNoFormat.html'; //for working locally
+        fetch(url)
+            // .then(r => r.text()) //for working locally
+            // .then(r => ({contents: r})) //for working locally
+            .then(r => r.json()) //for deployment
             .then(requestHandler);
-        //$.getJSON(url, requestHandler);
 
-        function requestHandler(data){
-            console.log(data);
+        function requestHandler(data)
+        {
             scheduleTable.innerHTML = data.contents.match(/<table>[.\s\S]*?<\/table>/uimg)[0];
-            scheduleTable.firstElementChild.firstElementChild.nextElementSibling.remove(); //remove previous and next buttons
             let table = scheduleTable.firstElementChild;
-            getWeekDaysArray(table)
-                .forEach(day => {
-                    day.style.color = 'blue';
-                    day.style.fontWeight = 'bold';
+            let weekDays = getWeekDaysArray(table);
+            let classes;
+            weekDays
+                .forEach((day, i, arr) => {
+                    day.firstElementChild.classList.add('weekDayTag');
                     if (hasAssignments(day))
                     {
-                        console.log(getClassesArray(day))
+                        classes = getClassesArray(day);
+                        classes
+                            .forEach(_class => {
+                                if (hasClass(_class))
+                                {
+                                    if (isTheClassDoubled(_class))
+                                    {
+                                        //do sth
+                                    }
+                                }
+                            })
+                    }
+                    else
+                    {
+                        day.classList.add('noLectures')
                     }
                 })
         }
@@ -101,5 +115,23 @@
             tempClass = tempClass.nextElementSibling,
             tempClass.nextElementSibling
         ]
+    }
+
+    function isTheClassDoubled(theClass)
+    {
+        const checkVariable = theClass.firstElementChild.nextElementSibling;
+        if (checkVariable.hasAttribute('rowspan'))
+            return checkVariable.getAttribute('rowspan') === "2";
+        return false;
+    }
+
+    function hasClass(theClass)
+    {
+        const checkVariable = theClass.firstElementChild.nextElementSibling;
+        if (checkVariable)
+            if (checkVariable.hasAttribute('rowspan'))
+                return checkVariable.getAttribute('rowspan') === "2" ||
+                    checkVariable.getAttribute('rowspan') === "1";
+        return false;
     }
 })();
