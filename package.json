@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "p-dim-popov",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "flatpickr": "^4.6.3"
+  }
 }

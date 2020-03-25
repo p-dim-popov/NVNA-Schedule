@@ -6,8 +6,10 @@
 
     <base href=".">
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
+<div>
 <form class="col-10">
     <label for="code">
         Код
@@ -15,7 +17,7 @@
     </label>
     <label for="code">
         Седмица/дата
-        <input type="week" placeholder="Въведи седмица/дата" id="week">
+        <input type="text" placeholder="Въведи седмица/дата" id="week">
     </label>
     <div>
         <label for="group" class="container">
@@ -39,6 +41,11 @@
 <table>
 
 </table>
+</div>
+
+<script src="./js/getWeekExtension.js"></script>
+<script src="./js/workingWithNvnaTableModule.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script src="./js/main.js"></script>
 </body>
 </html>
